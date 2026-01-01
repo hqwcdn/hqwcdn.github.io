@@ -1,14 +1,345 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Henry Wang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Henry Wang | CPA, CA | Insurance Finance Transformation (IFRS 17)</title>
+  <meta name="description" content="Henry Wang (CPA, CA) — Insurance & (Re)insurance reporting, controllership, and finance transformation. IFRS 17/18, close governance, mapping & reconciliation, and system/subledger integration." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="canonical" href="https://henrywang.cv/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Henry Wang — CPA, CA | Insurance Finance Transformation" />
+  <meta property="og:description" content="Insurance & (re)insurance reporting, controllership, and transformation — IFRS 17/18, close governance, mapping & reconciliation, and system/subledger integration." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://henrywang.cv/" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.04);
+      --line:rgba(255,255,255,.12);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --muted2:rgba(255,255,255,.56);
+      --accent:#7dd3fc;
+      --accent2:#a78bfa;
+      --shadow:0 18px 55px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7fafc;
+        --panel:rgba(0,0,0,.04);
+        --panel2:rgba(0,0,0,.03);
+        --line:rgba(0,0,0,.10);
+        --text:rgba(0,0,0,.88);
+        --muted:rgba(0,0,0,.62);
+        --muted2:rgba(0,0,0,.52);
+        --shadow:0 18px 55px rgba(0,0,0,.10);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1050px 680px at 15% -5%, rgba(125,211,252,.22), transparent 60%),
+        radial-gradient(900px 650px at 95% 0%, rgba(167,139,250,.18), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:underline;opacity:.95}
+    .wrap{max-width:1060px;margin:0 auto;padding:56px 20px 86px}
+    .top{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg,var(--panel),var(--panel2));
+      box-shadow:var(--shadow);
+      padding:28px;
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .name{margin:0;font-size:44px;letter-spacing:-.02em}
+    .subtitle{margin:8px 0 0;color:var(--muted);font-size:16px}
+    .chips{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+    .chip{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.03);
+      color:var(--text);font-size:13px;white-space:nowrap;
+    }
+    .cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:10px 14px;border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      font-weight:700;font-size:14px;
+    }
+    .btn.primary{border-color:rgba(125,211,252,.45);background:rgba(125,211,252,.12)}
+    .grid{margin-top:18px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.03);
+      box-shadow:0 12px 34px rgba(0,0,0,.22);
+      padding:22px;
+    }
+    .kicker{
+      margin:0 0 10px;
+      font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--muted);
+    }
+    p{margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .muted2{color:var(--muted2)}
+    .bullets{margin:10px 0 0;padding-left:18px}
+    .bullets li{margin:8px 0}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .tag{
+      padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;font-size:13px;color:var(--muted);
+      background:rgba(255,255,255,.02);
+    }
+    .hr{height:1px;background:var(--line);border:0;margin:14px 0}
+    details{
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(255,255,255,.02);
+      padding:12px 14px;
+      margin-top:10px;
+    }
+    summary{
+      cursor:pointer;list-style:none;
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+    }
+    summary::-webkit-details-marker{display:none}
+    .role{font-weight:800}
+    .meta{color:var(--muted);font-size:13px;margin-top:2px}
+    .caret{color:var(--muted);font-size:13px;white-space:nowrap}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width: 650px){ .split{grid-template-columns:1fr} }
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center;opacity:.92}
+    .note{margin-top:12px;font-size:13px;color:var(--muted2)}
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Henry Wang",
+    "honorificSuffix": "CPA, CA",
+    "url": "https://henrywang.cv/",
+    "email": "mailto:contact@henrywang.cv",
+    "sameAs": ["https://www.linkedin.com/in/tohenrywang"],
+    "jobTitle": "Insurance Finance Transformation & Reporting",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    }
+  }
+  </script>
 </head>
-<body style="font-family:system-ui;max-width:900px;margin:60px auto;padding:0 18px;line-height:1.6">
-  <h1>Henry Wang</h1>
-  <p>Director, Finance Transformation</p>
-  <p><a href="mailto:contact@henrywang.cv">contact@henrywang.cv</a></p>
-  <p><a href="https://www.linkedin.com/in/tohenrywang">LinkedIn</a></p>
+
+<body>
+  <main class="wrap">
+    <section class="top">
+      <div>
+        <h1 class="name">Henry Wang</h1>
+        <p class="subtitle">CPA, CA · Insurance &amp; (Re)insurance Reporting · Controllership &amp; Finance Transformation</p>
+
+        <div class="chips">
+          <span class="chip">IFRS 17 / IFRS 18</span>
+          <span class="chip">Close &amp; Reporting Governance</span>
+          <span class="chip">Mapping, Reconciliation &amp; Controls</span>
+          <span class="chip">System/Subledger Integration</span>
+        </div>
+
+        <p class="note">
+          This page is intentionally concise. For detailed case studies and references, please reach out via email or LinkedIn.
+        </p>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@henrywang.cv">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/tohenrywang" target="_blank" rel="noreferrer">LinkedIn</a>
+
+        <!-- Optional: upload a PDF named "Henry_Wang_CV.pdf" to the repo root -->
+        <a class="btn" href="Henry_Wang_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- Left column -->
+      <div class="card">
+        <h2 class="kicker">Leadership focus</h2>
+        <p class="muted">
+          I lead finance teams through complex change—delivering dependable close &amp; reporting outcomes while modernizing the operating model behind them.
+          My work sits at the intersection of technical accounting (IFRS 17/18), controllership governance, and systems/data integration.
+        </p>
+
+        <h2 class="kicker" style="margin-top:18px;">Signature outcomes</h2>
+        <ul class="bullets">
+          <li><strong>Accountable close leadership:</strong> owned IFRS close and reporting sign-off responsibilities (including board-level and solvency-facing deliverables) in an interim financial reporting leadership capacity.</li>
+          <li><strong>End-to-end reporting architecture:</strong> designed IFRS reporting infrastructure for a life reinsurer—COA design, close workflows, journal logic, disclosure workbooks, and financial statement production; acted as lead audit contact.</li>
+          <li><strong>IFRS 17 implementation delivery:</strong> led IFRS 17/18 programs across life and P&amp;C—policy memos, multi-GAAP mapping (US GAAP/IFRS), and integration with subledger tooling and downstream reporting.</li>
+          <li><strong>Transformation with controls:</strong> improved data flows and integrity through governance, reconciliations, and cross-functional alignment (finance/actuarial/technology) to reduce reporting friction and rework.</li>
+        </ul>
+
+        <hr class="hr" />
+
+        <h2 class="kicker">IFRS 17 — what I can take end-to-end</h2>
+        <div class="tags">
+          <span class="tag">Contract boundary</span>
+          <span class="tag">LoA (PAA vs GMM)</span>
+          <span class="tag">Discounting</span>
+          <span class="tag">Risk adjustment</span>
+          <span class="tag">CSM / Loss component</span>
+          <span class="tag">Reinsurance held</span>
+          <span class="tag">Transition</span>
+          <span class="tag">Presentation &amp; disclosures</span>
+          <span class="tag">Subledger mapping &amp; GL reconciliation</span>
+        </div>
+
+        <h2 class="kicker" style="margin-top:18px;">How I work</h2>
+        <ul class="bullets">
+          <li><strong>Clarity first:</strong> define decision points, ownership, and “definition of done” so delivery doesn’t drift.</li>
+          <li><strong>Controls by design:</strong> embed reconciliations, sign-offs, and auditability into the process—not as an afterthought.</li>
+          <li><strong>Translate across teams:</strong> bridge finance, actuarial, and technology into one coherent operating model.</li>
+        </ul>
+      </div>
+
+      <!-- Right column -->
+      <div class="card">
+        <h2 class="kicker">Experience</h2>
+
+        <details open>
+          <summary>
+            <div>
+              <div class="role">Senior Manager, Controllership · Trisura Guarantee Insurance Company</div>
+              <div class="meta">Toronto · Aug 2025 – Present</div>
+            </div>
+            <div class="caret">Details ▾</div>
+          </summary>
+          <ul class="bullets">
+            <li>Own legal-entity controllership, accountable for monthly/quarterly close under IFRS.</li>
+            <li>Lead reporting governance and internal controls; partner with CFO, auditors, and actuarial stakeholders.</li>
+            <li>Drive IFRS 17 and reinsurance accounting initiatives and controllership transformation priorities.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            <div>
+              <div class="role">Manager, Finance Transformation &amp; Reporting Advisory · Deloitte</div>
+              <div class="meta">Toronto · Aug 2022 – Jul 2025</div>
+            </div>
+            <div class="caret">Details ▾</div>
+          </summary>
+          <ul class="bullets">
+            <li>Led finance transformation and reporting engagements for insurance clients with senior stakeholder accountability.</li>
+            <li>Delivered IFRS reporting architecture (COA/workflows/journals/disclosures) and served as lead audit contact.</li>
+            <li>Owned IFRS 17/18 implementation workstreams: memos, mapping, integration, and close/reporting enablement.</li>
+            <li>Supported ERP rollout programs, including COA redesign, reconciliations, and cross-functional data alignment.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            <div>
+              <div class="role">Manager, Financial Accounting &amp; Advisory · Ernst &amp; Young</div>
+              <div class="meta">Toronto · Nov 2021 – Jul 2022</div>
+            </div>
+            <div class="caret">Details ▾</div>
+          </summary>
+          <ul class="bullets">
+            <li>Drafted IFRS 17 accounting policy memos across core topics for life and P&amp;C (re)insurers.</li>
+            <li>Supported IFRS 17 subledger implementation: mapping, testing, and reconciliations to GL.</li>
+            <li>Facilitated workshops to convert accounting requirements into operational workflows across teams.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            <div>
+              <div class="role">Business Valuation · Davis Martindale</div>
+              <div class="meta">Toronto/London · Jan 2021 – Nov 2021</div>
+            </div>
+            <div class="caret">Details ▾</div>
+          </summary>
+          <ul class="bullets">
+            <li>Built valuation models and supported diligence; focused on business drivers, cash flows, and risk assessment.</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            <div>
+              <div class="role">Assurance (Insurance) · Ernst &amp; Young</div>
+              <div class="meta">Toronto · Oct 2017 – Jan 2021</div>
+            </div>
+            <div class="caret">Details ▾</div>
+          </summary>
+          <ul class="bullets">
+            <li>Progressed from staff to manager; led teams and delivered full-cycle audits for insurance and reinsurance clients.</li>
+            <li>Worked across IFRS, OSFI (LICAT/MCCSR/MCT/BAAT), US GAAP, and NAIC statutory frameworks.</li>
+            <li>Resolved complex accounting issues (incl. reinsurance transactions, system migrations, and reconciliations).</li>
+            <li>Led internal insurance training as a technical contributor and manager.</li>
+          </ul>
+        </details>
+
+        <h2 class="kicker" style="margin-top:18px;">Tools</h2>
+        <div class="tags">
+          <span class="tag">Moody’s RiskIntegrity</span>
+          <span class="tag">Oracle</span>
+          <span class="tag">Infor SunSystems</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">NetSuite (SmartView / NSPB)</span>
+        </div>
+
+        <h2 class="kicker" style="margin-top:18px;">Education &amp; designation</h2>
+        <div class="split">
+          <div>
+            <p><strong>University of Toronto (MMPA)</strong><br />
+              <span class="muted">GPA 3.95/4.00 · Dean’s List (Top 10%) &amp; awards</span>
+            </p>
+          </div>
+          <div>
+            <p><strong>CPA, CA</strong><br />
+              <span class="muted">Chartered Professional Accountants of Ontario (since 2019)</span>
+            </p>
+          </div>
+        </div>
+
+        <hr class="hr" />
+
+        <h2 class="kicker">Contact</h2>
+        <p class="muted">
+          For detailed deliverables, project scope, and references: <a href="mailto:contact@henrywang.cv">contact@henrywang.cv</a>
+          or <a href="https://www.linkedin.com/in/tohenrywang" target="_blank" rel="noreferrer">LinkedIn</a>.
+        </p>
+        <p class="muted2" style="margin-bottom:0;">
+          Privacy note: phone number and home address are intentionally not displayed on this public page.
+        </p>
+      </div>
+    </section>
+
+    <footer>© <span id="y"></span> Henry Wang · henrywang.cv</footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
